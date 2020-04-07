@@ -8,11 +8,11 @@ import { IProducts } from './models/iproducts';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  product: Array<IProducts>;
+  products: Array<IProducts>;
 
   constructor(private productService: ProductService) { }
 
   NgOnInit() {
-    this.product = this.productService.getProducts();
+    this.products = this.productService.getProducts();
   }
 }
