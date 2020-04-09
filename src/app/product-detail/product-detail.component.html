@@ -9,13 +9,7 @@
         </div>
         <div class="ratings">
             <p class="pull-right">{{product.reviews}}</p>
-            <p>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-            </p>
+            <app-reviews [rating]="product.rating"></app-reviews>
         </div>
         <button type="submit" name="submit" (click)="addToCart()">Add To Cart</button>
     </div>

@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProductService } from './services/product.service';
+import { RatingComponent } from './rating/rating.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ProductService } from './services/product.service';
     ProductDetailComponent,
     HeaderComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    RatingComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule
